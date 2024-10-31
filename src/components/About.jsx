@@ -10,7 +10,11 @@ const About = () => {
       <div className="w-mobile md:w-containerWidth mx-auto grid md:grid-cols-2 gap-5">
         <div className=" grid grid-cols-2 gap-3">
           <div>
-            <img className="rounded-lg" src={aboutus} alt="" />
+            <img
+              className="rounded-lg h-full object-cover"
+              src={aboutus}
+              alt=""
+            />
           </div>
           <div className="grid grid-rows-4 gap-3">
             <div className=" row-span-3">
