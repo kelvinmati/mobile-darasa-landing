@@ -119,7 +119,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-primaryRed">Links</h2>
+            <h2 className="text-primaryRed">Quick links</h2>
             <ul>
               <li>Home</li>
               <li>About us</li>
