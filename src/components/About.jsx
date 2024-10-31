@@ -1,7 +1,7 @@
 import React from "react";
 import arbitrage_mockup from "../assets/images/arbitrage-mockup.png";
 import kaila_mockup from "../assets/images/kaila-mockup.png";
-import aboutus from "../assets/images/aboutus.jpg";
+import aboutus from "../assets/images/aboutus.jpeg";
 import aboutus2 from "../assets/images/aboutus2.jpg";
 
 const About = () => {
