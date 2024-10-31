@@ -16,7 +16,6 @@ const Hero = () => {
             <p className="text-md text-gray-300 py-2">
               {/* A good <span>education </span> is foundation for better{" "} */}
               One Platform, Infinite Learning Possibilities.
-              <span>future.</span>
             </p>
           </div>
           <button className="px-6 py-2 bg-primaryRed text-white rounded-md hover:bg-secondaryRed flex items-center space-x-1">

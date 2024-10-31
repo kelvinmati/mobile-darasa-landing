@@ -106,7 +106,7 @@ const Footer = () => {
               <h2 className="text-primaryRed">Contact</h2>
               <div className="flex items-center space-x-2">
                 <ion-icon name="call-outline"></ion-icon>
-                <p>+254759761804</p>
+                <p>+254 708 068 851</p>
               </div>
               <div className="flex items-center space-x-2">
                 <ion-icon name="mail-outline"></ion-icon>
