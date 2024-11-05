@@ -38,15 +38,15 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
                   <img className="w-10 h-10" src={course_mgt} alt="" />
-                  <p>Customizable Course Management</p>
+                  <p>Seamless Course Management and Content Delivery</p>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
                   <img className="w-10 h-10" src={virtual_education} alt="" />
-                  <p>Virtual Classrooms</p>
+                  <p>Branded & Customised Learning Environment</p>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
                   <img className="w-10 h-10" src={content_lib} alt="" />
-                  <p>Content Library</p>
+                  <p>Secure, Role-Based Access</p>
                 </div>{" "}
                 <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
                   <img className="w-10 h-10" src={analytics} alt="" />
@@ -54,7 +54,11 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
                   <img className="w-10 h-10" src={grading} alt="" />
-                  <p>Assessment and Grading Tools</p>
+                  <p>Engagement and Communication Tools</p>
+                </div>
+                <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
+                  <img className="w-10 h-10" src={grading} alt="" />
+                  <p>Ongoing Support and Maintenance</p>
                 </div>
               </ul>
             </div>

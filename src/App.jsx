@@ -7,6 +7,8 @@ import Partners from "./components/Partners";
 import Offers from "./components/Offers";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Features from "./components/Features";
+import Pricing from "./components/Pricing";
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
       <Hero />
       <Partners />
       <About />
+      <Features />
       <Offers />
-
+      <Pricing />
       <Footer />
     </div>
   );
