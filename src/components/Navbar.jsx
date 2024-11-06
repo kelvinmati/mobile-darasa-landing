@@ -23,7 +23,7 @@ const Navbar = () => {
               About
             </li>
 
-            <div className="dropdown dropdown-bottom">
+            <div className="dropdown dropdown-bottom z-20">
               <div
                 tabIndex={0}
                 role="button"

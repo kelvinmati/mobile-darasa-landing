@@ -35,17 +35,20 @@ const About = () => {
         <div className="text-textColor space-y-3">
           <h2 className="text-xl text-black">ABOUT MOBILE DARASA</h2>
           <p>
-            Mobile Darasa is designed specifically to serve educational
-            institutes across Kenya,by providing a comprehensive, interactive,
-            and affordable digital learning solution
+            obile Darasa is an innovative e-learning platform designed to
+            empower educational institutions across Africa by providing
+            customizable and accessible digital learning solutions. Our mission
+            is to enhance the quality and reach of education by transforming
+            traditional learning environments into dynamic online spaces that
+            cater to a diverse range of learners.
           </p>
           <p>
-            By integrating Kenya’s national curriculum with global best
-            practices, we offer a user-friendly platform that helps learning
-            institutions deliver quality education efficiently, through advanced
-            digital tools, live classes, assessments, and resources, we aim to
-            transform how institutions deliver content, engage students, and
-            enhance their learning outcomes.
+            Mobile Darasa aims to address the unique challenges faced by African
+            educational institutions, such as limited access to quality
+            resources, high development costs, and inadequate infrastructure. By
+            offering a ready-to-use, branded digital learning environment,
+            Mobile Darasa enables institutions to focus on delivering quality
+            education without the burden of technical complexities.
           </p>
           <p>
             Mobile Darasa targets learning institutions in Kenya, including:

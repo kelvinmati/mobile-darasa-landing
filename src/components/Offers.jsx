@@ -11,7 +11,7 @@ const Offers = () => {
         <div className="space-y-4">
           <div>
             <h2 className="text-xl pb-2"> WHAT WILL YOU GET?.</h2>
-            <p className="">
+            <p className="text-primaryRed">
               Mobile Darasa is cloud-based, ensuring accessibility via mobile
               devices, tablets, and computers. It includes:
             </p>

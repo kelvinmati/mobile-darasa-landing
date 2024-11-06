@@ -4,7 +4,7 @@ const Pricing = () => {
   return (
     <div className="py-16">
       <div className="w-mobile md:w-containerWidth mx-auto ">
-        <div className="divider text-xl">FIND THE PERFECT PLAN FOR YOU.</div>
+        <div className="divider text-xl">FIND THE PERFECT PACKAGE FOR YOU.</div>
 
         <div className="flex justify-center items-center space-x-5">
           <p>Monthly</p>
@@ -21,7 +21,7 @@ const Pricing = () => {
                 className={`bg-gray-50 p-3 shadow-lg rounded-lg space-y-3 border border-t-8 `}
                 style={{ borderTopColor: color }}
               >
-                <p>{name}</p>
+                <p className="font-bold">{name}</p>
                 <p>
                   {" "}
                   <span className="text-2xl">{price.monthly}</span>/month
