@@ -35,7 +35,7 @@ const About = () => {
         <div className="text-textColor space-y-3">
           <h2 className="text-xl text-black">ABOUT MOBILE DARASA</h2>
           <p>
-            obile Darasa is an innovative e-learning platform designed to
+            Mobile Darasa is an innovative e-learning platform designed to
             empower educational institutions across Africa by providing
             customizable and accessible digital learning solutions. Our mission
             is to enhance the quality and reach of education by transforming

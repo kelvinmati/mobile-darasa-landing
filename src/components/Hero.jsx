@@ -150,7 +150,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex space-x-3">
-          <button className="px-6 py-2 bg-primaryRed text-white rounded-md hover:bg-secondaryRed flex items-center space-x-1">
+          <button className=" animate-bounce px-6 py-2 bg-primaryRed text-white rounded-md hover:bg-secondaryRed flex items-center space-x-1">
             <span>Get started</span>{" "}
             <span>
               <svg
