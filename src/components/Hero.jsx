@@ -4,6 +4,10 @@ import icon1 from "../assets/images/online-education.png";
 import icon2 from "../assets/images/webinar.png";
 import arbitrage_mockup from "../assets/images/arbitrage-mockup.png";
 import kaila_mockup from "../assets/images/kaila-mockup.png";
+
+import university from "../assets/icons/university-icon.png";
+import college from "../assets/icons/college-icon.png";
+
 // const Hero = () => {
 //   return (
 //     <div>
@@ -142,11 +146,11 @@ const Hero = () => {
       <div className="space-y-12">
         <div>
           <p className="text-5xl font-bold text-white ">
-            Your Gateway to Digital Learning Success
+            Your Gateway to Digital Learning Success.
           </p>
           <p className="text-md text-gray-300 py-2">
             {/* A good <span>education </span> is foundation for better{" "} */}
-            One Platform, Infinite Learning
+            One Platform, Infinite Learning.
           </p>
         </div>
         <div className="flex space-x-3">
@@ -191,10 +195,10 @@ const Hero = () => {
         </div> */}
 
         <div className="grid grid-cols-3 gap-2 text-white">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4  border-r-2">
             <img
               className="w-12 h-12 bg-white rounded-full p-2"
-              src={icon1}
+              src={university}
               alt=""
             />
             <div>
@@ -202,7 +206,7 @@ const Hero = () => {
               <p className="">Universities</p>
             </div>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 border-r-2">
             <img
               className="w-12 h-12 bg-white rounded-full p-2"
               src={icon2}
@@ -213,10 +217,10 @@ const Hero = () => {
               <p className="">Students</p>
             </div>
           </div>{" "}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 ">
             <img
               className="w-12 h-12 bg-white rounded-full p-2"
-              src={icon1}
+              src={college}
               alt=""
             />
             <div>
