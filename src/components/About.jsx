@@ -3,10 +3,10 @@ import arbitrage_mockup from "../assets/images/arbitrage-mockup.png";
 import kaila_mockup from "../assets/images/kaila-mockup.png";
 import aboutus from "../assets/images/aboutus.jpeg";
 import aboutus2 from "../assets/images/aboutus2.jpg";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <div className="py-20">
+    <div id="about" className="py-20">
       <div className="w-mobile md:w-containerWidth mx-auto grid md:grid-cols-2 gap-5">
         <div className=" grid grid-cols-2 gap-3">
           <div>
@@ -127,9 +127,13 @@ const About = () => {
               </div>
             </div>
           </div>
-          <button className="px-6 py-2 bg-primaryRed text-white rounded-md hover:bg-secondaryRed ">
-            More about us
-          </button>
+          <div>
+            <Link to="/about">
+              <button className="px-6 py-2 bg-primaryRed text-white rounded-md hover:bg-secondaryRed ">
+                More about us
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

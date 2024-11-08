@@ -192,7 +192,7 @@ import content_lib from "../assets/images/content-lib.png";
 
 const Features = () => {
   return (
-    <div className="py-5">
+    <div id="features" className="py-5">
       <div className=" w-mobile md:w-containerWidth mx-auto ">
         <div className="pb-4">
           <h2 className=" text-xl">KEY FEATURES AND FUNCTIONALITIES.</h2>

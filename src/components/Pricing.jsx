@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="py-16">
+    <div id="pricing" className="py-16">
       <div className="w-mobile md:w-containerWidth mx-auto ">
         <div className="divider text-xl">FIND THE PERFECT PACKAGE FOR YOU.</div>
 

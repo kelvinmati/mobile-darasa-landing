@@ -6,6 +6,8 @@ import course_mgt from "../assets/images/course-mgt.png";
 import content_lib from "../assets/images/content-lib.png";
 import analytics from "../assets/images/analytics.png";
 import grading from "../assets/images/grading.png";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -16,18 +18,36 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="flex space-x-3">
-            <li className="cursor-pointer hover:text-secondaryBlue text-textColor">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+            >
               Home
-            </li>
-            <li className="cursor-pointer hover:text-secondaryBlue text-textColor">
+            </NavLink>
+            {/* <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+            >
               About
+            </NavLink> */}
+
+            <li className="cursor-pointer hover:text-primaryRed text-textColor">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={1500}
+              >
+                About
+              </Link>
             </li>
 
             <div className="dropdown dropdown-bottom z-20">
               <div
                 tabIndex={0}
                 role="button"
-                className="flex items-center space-x-2 cursor-pointer hover:text-secondaryBlue text-textColor"
+                className="flex items-center space-x-2 cursor-pointer hover:text-primaryRed text-textColor"
               >
                 <span>Features</span>
                 <ion-icon name="chevron-down-outline"></ion-icon>
@@ -36,36 +56,58 @@ const Navbar = () => {
                 tabIndex={0}
                 className="dropdown-content menu bg-base-100 rounded-md z-[1] mt-3  p-3 shadow grid grid-cols-2 gap-4 w-[500px] "
               >
-                <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                  <img className="w-10 h-10" src={course_mgt} alt="" />
-                  <p>Seamless Course Management and Content Delivery</p>
-                </div>
-                <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                  <img className="w-10 h-10" src={virtual_education} alt="" />
-                  <p>Branded & Customised Learning Environment</p>
-                </div>
-                <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                  <img className="w-10 h-10" src={content_lib} alt="" />
-                  <p>Secure, Role-Based Access</p>
-                </div>{" "}
-                <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                  <img className="w-10 h-10" src={analytics} alt="" />
-                  <p>Analytics and Reporting</p>
-                </div>
-                <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                  <img className="w-10 h-10" src={grading} alt="" />
-                  <p>Engagement and Communication Tools</p>
-                </div>
-                <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                  <img className="w-10 h-10" src={grading} alt="" />
-                  <p>Ongoing Support and Maintenance</p>
-                </div>
+                <Link to="features" smooth={true} duration={1500}>
+                  <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
+                    <img className="w-10 h-10" src={course_mgt} alt="" />
+                    <p>Seamless Course Management and Content Delivery</p>
+                  </div>
+                </Link>
+                <Link to="features" smooth={true} duration={1500}>
+                  <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
+                    <img className="w-10 h-10" src={virtual_education} alt="" />
+                    <p>Branded & Customised Learning Environment</p>
+                  </div>
+                </Link>
+                <Link to="features" smooth={true} duration={1500}>
+                  <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
+                    <img className="w-10 h-10" src={content_lib} alt="" />
+                    <p>Secure, Role-Based Access</p>
+                  </div>{" "}
+                </Link>
+                <Link to="features" smooth={true} duration={1500}>
+                  <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
+                    <img className="w-10 h-10" src={analytics} alt="" />
+                    <p>Analytics and Reporting</p>
+                  </div>
+                </Link>
+                <Link to="features" smooth={true} duration={1500}>
+                  <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
+                    <img className="w-10 h-10" src={grading} alt="" />
+                    <p>Engagement and Communication Tools</p>
+                  </div>
+                </Link>
+
+                <Link to="features" smooth={true} duration={1500}>
+                  <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
+                    <img className="w-10 h-10" src={grading} alt="" />
+                    <p>Ongoing Support and Maintenance</p>
+                  </div>
+                </Link>
               </ul>
             </div>
-            <li className="cursor-pointer hover:text-secondaryBlue text-textColor">
-              Pricing
+            <li className="cursor-pointer hover:text-primaryRed text-textColor">
+              <Link
+                activeClass="active"
+                to="pricing"
+                // spy={true}
+                smooth={true}
+                offset={-80}
+                duration={1500}
+              >
+                Pricing
+              </Link>
             </li>
-            <li className="cursor-pointer hover:text-secondaryBlue text-textColor">
+            <li className="cursor-pointer hover:text-primaryRed text-textColor">
               Contact
             </li>
           </ul>

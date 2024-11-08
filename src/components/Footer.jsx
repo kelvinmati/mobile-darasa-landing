@@ -36,6 +36,13 @@ const Footer = () => {
                   <div>
                     <p className=" text-lg text-primaryRed">John Doe</p>
                     <p className="text-sm">Lecturer (UON)</p>
+                    <div className="flex space-x-1 text-yellow-300">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
                   </div>
                 </div>
                 <p>

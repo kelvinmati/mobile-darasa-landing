@@ -134,7 +134,7 @@ const Hero = () => {
   // console.log("res is", res);
   return (
     <div
-      className="w-mobile md:w-containerWidth mx-auto bg-blend-multiply bg-cover bg-primaryBlue rounded-3xl py-16 px-8 md:gap-4 gap-20 grid md:grid-cols-2 items-center"
+      className="w-mobile md:w-containerWidth mx-auto bg-blend-multiply bg-cover bg-primaryBlue rounded-3xl py-16 px-8 md:gap-4 gap-20 grid md:grid-cols-2 items-center md:h-[550px]"
       style={{
         backgroundImage: `url(${footer_img})`,
       }}
@@ -170,12 +170,12 @@ const Hero = () => {
             </span>
           </button>
 
-          <button className="text-primaryRed px-6 py-2 border rounded-md hover:bg-gray-50">
+          {/* <button className="text-primaryRed px-6 py-2 border rounded-md hover:bg-gray-50">
             Watch video
-          </button>
+          </button> */}
         </div>
 
-        <div className="grid grid-cols-3 gap-2 bg-white p-5 rounded-lg">
+        {/* <div className="grid grid-cols-3 gap-2 bg-white p-5 rounded-lg">
           <div className="">
             <p className="text-primaryRed text-2xl">200+</p>
             <p className="text-textColor">Universities</p>
@@ -187,6 +187,42 @@ const Hero = () => {
           <div>
             <p className="text-primaryRed text-2xl">5,000+</p>
             <p className="text-textColor">Students</p>
+          </div>
+        </div> */}
+
+        <div className="grid grid-cols-3 gap-2 text-white">
+          <div className="flex items-center space-x-4">
+            <img
+              className="w-12 h-12 bg-white rounded-full p-2"
+              src={icon1}
+              alt=""
+            />
+            <div>
+              <p className="text-primaryRed text-lg">200+</p>
+              <p className="">Universities</p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-4">
+            <img
+              className="w-12 h-12 bg-white rounded-full p-2"
+              src={icon2}
+              alt=""
+            />
+            <div>
+              <p className="text-primaryRed text-lg">1000+</p>
+              <p className="">Students</p>
+            </div>
+          </div>{" "}
+          <div className="flex items-center space-x-4">
+            <img
+              className="w-12 h-12 bg-white rounded-full p-2"
+              src={icon1}
+              alt=""
+            />
+            <div>
+              <p className="text-primaryRed text-lg">100+</p>
+              <p className="">Colleges</p>
+            </div>
           </div>
         </div>
       </div>
