@@ -6,12 +6,15 @@ import course_mgt from "../assets/images/course-mgt.png";
 import content_lib from "../assets/images/content-lib.png";
 import analytics from "../assets/images/analytics.png";
 import grading from "../assets/images/grading.png";
+import support from "../assets/icons/support.png";
+import roleBased from "../assets/icons/role-based.png";
+
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className="py-3 ">
+    <div id="home" className="py-3 ">
       <div className="w-mobile md:w-containerWidth mx-auto flex items-center justify-between  ">
         <div className="h-[80px] cursor-pointer">
           <img className="w-full h-full" src={logoBlue} alt="" />
@@ -70,7 +73,7 @@ const Navbar = () => {
                 </Link>
                 <Link to="features" smooth={true} duration={1500}>
                   <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                    <img className="w-10 h-10" src={content_lib} alt="" />
+                    <img className="w-10 h-10" src={roleBased} alt="" />
                     <p>Secure, Role-Based Access</p>
                   </div>{" "}
                 </Link>
@@ -89,7 +92,7 @@ const Navbar = () => {
 
                 <Link to="features" smooth={true} duration={1500}>
                   <div className="flex items-center space-x-2 bg-gray-100 p-3 rounded-md cursor-pointer">
-                    <img className="w-10 h-10" src={grading} alt="" />
+                    <img className="w-10 h-10" src={support} alt="" />
                     <p>Ongoing Support and Maintenance</p>
                   </div>
                 </Link>
@@ -107,8 +110,22 @@ const Navbar = () => {
                 Pricing
               </Link>
             </li>
+            <NavLink to="/faq">
+              <li className="cursor-pointer hover:text-primaryRed text-textColor">
+                FAQs
+              </li>
+            </NavLink>
+
             <li className="cursor-pointer hover:text-primaryRed text-textColor">
-              Contact
+              <Link
+                to="footer"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={1500}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

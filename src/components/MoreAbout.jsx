@@ -2,6 +2,7 @@ import React from "react";
 import about_hero from "../assets/images/about-hero.jpg";
 import vision from "../assets/icons/vision.png";
 import mission from "../assets/icons/mission.png";
+import Footer from "./Footer";
 
 const MoreAbout = () => {
   return (
@@ -13,7 +14,12 @@ const MoreAbout = () => {
         }}
       >
         <div className=" w-mobile md:w-containerWidth mx-auto flex flex-col justify-center  h-full">
-          <p className="text-xl">ABOUT US.</p>
+          <div className="breadcrumbs max-w-xs text-sm">
+            <ul>
+              <li>Home</li>
+              <li>About us</li>
+            </ul>
+          </div>
           <p className="text-primaryRed"> Know more about mobile darasa. </p>
         </div>
       </div>
@@ -87,7 +93,7 @@ const MoreAbout = () => {
 
       {/* mission and vison */}
 
-      <div className="grid md:grid-cols-2 text-white py-10 ">
+      <div className="grid md:grid-cols-2 text-white pt-10 pb-20 ">
         <div className="bg-secondaryRed  py-12 md:pl-6 ">
           <div className="w-mobile md:w-containerWidth mx-auto flex flex-col items-center">
             <img className="h-12 w-12" src={vision} alt="" />
@@ -110,6 +116,9 @@ const MoreAbout = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="bg-primaryBlue">
+        <Footer />
       </div>
     </>
   );

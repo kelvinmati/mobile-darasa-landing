@@ -14,3 +14,15 @@
 .inactive {
   color: #39575c;
 }
+
+.swiper-pagination-bullet {
+  background-color: white !important; /* inactive dot color */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff0000 !important; /* active dot color - replace with your red color */
+}
+
+.swiper-pagination-bullet {
+  margin-bottom: -20px !important;
+}

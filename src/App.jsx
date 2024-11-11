@@ -5,12 +5,16 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Partners from "./components/Partners";
 import Offers from "./components/Offers";
-import Footer from "./components/Footer";
+import Footer from "./components/Bottom.jsx";
 import About from "./components/About";
 import Features from "./components/Features";
 import Pricing from "./components/Pricing";
 import { Routes, Route } from "react-router-dom";
 import MoreAbout from "./components/MoreAbout";
+import TabsConfig from "./components/Tabs.jsx";
+import Faq from "./components/Faq.jsx";
+import Bottom from "./components/Bottom.jsx";
+
 function App() {
   return (
     <div>
@@ -24,13 +28,15 @@ function App() {
               <Partners />
               <About />
               <Features />
+              <TabsConfig />
               <Offers />
               <Pricing />
-              <Footer />
+              <Bottom />
             </>
           }
         />
         <Route path="/about" element={<MoreAbout />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
     </div>
   );
