@@ -14,6 +14,9 @@ import MoreAbout from "./components/MoreAbout";
 import TabsConfig from "./components/Tabs.jsx";
 import Faq from "./components/Faq.jsx";
 import Bottom from "./components/Bottom.jsx";
+import Challenges from "./components/Challenges.jsx";
+import Gain from "./components/Gain.jsx";
+import Contact from "./components/Contact.jsx";
 
 function App() {
   return (
@@ -28,9 +31,11 @@ function App() {
               <Partners />
               <About />
               <Features />
-              <TabsConfig />
+              <Challenges />
+              <Gain />
               <Offers />
               <Pricing />
+              <Contact />
               <Bottom />
             </>
           }

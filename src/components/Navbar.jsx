@@ -45,8 +45,19 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            <li className="cursor-pointer hover:text-primaryRed text-textColor">
+              <Link
+                to="features"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={1500}
+              >
+                Features
+              </Link>
+            </li>
 
-            <div className="dropdown dropdown-bottom z-20">
+            {/* <div className="dropdown dropdown-bottom z-20">
               <div
                 tabIndex={0}
                 role="button"
@@ -97,7 +108,7 @@ const Navbar = () => {
                   </div>
                 </Link>
               </ul>
-            </div>
+            </div> */}
             <li className="cursor-pointer hover:text-primaryRed text-textColor">
               <Link
                 activeClass="active"
@@ -118,7 +129,7 @@ const Navbar = () => {
 
             <li className="cursor-pointer hover:text-primaryRed text-textColor">
               <Link
-                to="footer"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -130,10 +141,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="space-x-5">
-          <button className="text-primaryRed px-6 py-2 border rounded-md hover:bg-gray-50">
-            Request demo
-          </button>
-          <button className="px-6 py-2 bg-primaryBlue text-white rounded-md hover:bg-secondaryBlue">
+          <button className="px-6 py-2 bg-primaryRed text-white rounded-full hover:bg-secondaryRed">
             Sign up
           </button>
         </div>

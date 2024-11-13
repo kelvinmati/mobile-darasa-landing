@@ -14,12 +14,13 @@ import icon1 from "../assets/images/online-education.png";
 import icon2 from "../assets/images/webinar.png";
 import arbitrage_mockup from "../assets/images/arbitrage-mockup.png";
 import kaila_mockup from "../assets/images/kaila-mockup.png";
+import hero_img from "../assets/images/hero-img.png";
 
 const Carousel = () => {
   // Create refs for navigation
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
-  const images = [kaila_mockup, arbitrage_mockup, heroImg, icon1];
+  const images = [hero_img, hero_img, hero_img];
   return (
     <div className="h-full w-full relative ">
       <Swiper

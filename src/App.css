@@ -4,6 +4,10 @@
   padding: 0px;
 }
 
+body {
+  /* background-color: #faf6e3; */
+  background-color: #faf6e39b;
+}
 .ion-icon {
   color: yellow;
 }
@@ -16,13 +20,20 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: white !important; /* inactive dot color */
+  background-color: gray !important; /* inactive dot color */
 }
 
 .swiper-pagination-bullet-active {
   background-color: #ff0000 !important; /* active dot color - replace with your red color */
 }
-
-.swiper-pagination-bullet {
-  margin-bottom: -20px !important;
+.challenges-bullet-active {
+  background-color: black !important;
 }
+
+/* .swiper-pagination-bullet {
+  margin-bottom: -20px !important;
+} */
+
+/* ion-icon {
+  color: #ff0007;
+} */

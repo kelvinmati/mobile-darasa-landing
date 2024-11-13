@@ -33,7 +33,7 @@ const Pricing = () => {
                         ]} w-full rounded-lg text-white"
                   style={{ backgroundColor: color }}
                 >
-                  Sign Up with {name}
+                  Sign up
                 </button>
                 <div className="divider py-4">FEATURES.</div>
 

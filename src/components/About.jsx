@@ -50,7 +50,7 @@ const About = () => {
             Mobile Darasa enables institutions to focus on delivering quality
             education without the burden of technical complexities.
           </p>
-          <p>
+          <p className="text-black">
             Mobile Darasa targets learning institutions in Kenya, including:
           </p>
           <div className="grid grid-cols-2 gap-5">
@@ -62,7 +62,7 @@ const About = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-6 text-primaryRed"
+                  className="size-6 text-secondaryBlue"
                 >
                   <path
                     strokeLinecap="round"
@@ -79,7 +79,7 @@ const About = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-6 text-primaryRed"
+                  className="size-6 text-secondaryBlue"
                 >
                   <path
                     strokeLinecap="round"
@@ -98,7 +98,7 @@ const About = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-6 text-primaryRed"
+                  className="size-6 text-secondaryBlue"
                 >
                   <path
                     strokeLinecap="round"
@@ -115,7 +115,7 @@ const About = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-6 text-primaryRed"
+                  className="size-6 text-secondaryBlue"
                 >
                   <path
                     strokeLinecap="round"
@@ -129,8 +129,8 @@ const About = () => {
           </div>
           <div>
             <Link to="/about">
-              <button className="px-6 py-2 bg-primaryRed text-white rounded-md hover:bg-secondaryRed ">
-                More about us
+              <button className="px-6 py-2 bg-secondaryBlue text-white rounded-full hover:bg-primaryBlue ">
+                Learn more
               </button>
             </Link>
           </div>

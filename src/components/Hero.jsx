@@ -13,54 +13,40 @@ import kaila_mockup from "../assets/images/kaila-mockup.png";
 
 import university from "../assets/icons/university-icon.png";
 import college from "../assets/icons/college-icon.png";
+import hero_bg from "../assets/images/hero-bg.png";
+import profile1 from "../assets/images/grey-lady.png";
 
 const Hero = () => {
   const wordsArray = ["Success", "Knowledge", "Excellence", "Growth"];
   return (
     <div
-      className="w-mobile md:w-containerWidth mx-auto bg-blend-multiply bg-cover bg-primaryBlue rounded-3xl py-16 px-8 md:gap-4 gap-20 grid md:grid-cols-2 items-center md:h-[550px]"
+      className="w-mobile md:w-containerWidth mx-auto bg-blend-multiply bg-cover rounded-3xl   px-8 md:gap-4 gap-20 grid md:grid-cols-2 items-center md:h-[550px]"
       style={{
-        backgroundImage: `url(${footer_img})`,
+        backgroundImage: `url(${hero_bg})`,
       }}
     >
-      <div className="space-y-12">
+      <div className="space-y-10">
         <div>
           <p className="md:text-5xl text-3xl font-bold text-white ">
             Your Gateway to Digital Learning{" "}
             {<TypingEffect words={wordsArray} />}.
           </p>
 
-          <p className="text-md text-gray-300 py-2">
+          <p className="text-md text-gray-100 py-2">
             One Platform, Infinite Learning.
           </p>
         </div>
         <div className="flex space-x-3">
-          <button className=" animate-bounce px-6 py-2 bg-primaryRed text-white rounded-md hover:bg-secondaryRed flex items-center space-x-1">
+          <button className=" px-6 py-2 bg-primaryRed text-white rounded-full hover:bg-secondaryRed flex items-center space-x-1">
             <span>Get started</span>{" "}
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </span>
           </button>
 
-          {/* <button className="text-primaryRed px-6 py-2 border rounded-md hover:bg-gray-50">
-            Watch video
-          </button> */}
+          <button className="text-white px-6 py-2 border rounded-full">
+            Request Demo
+          </button>
         </div>
 
-        <div className="grid grid-cols-3 gap-2 text-white">
+        {/* <div className="grid grid-cols-3 gap-2 text-white">
           <div className="flex items-center space-x-4  border-r-2">
             <img
               className="w-12 h-12 bg-white rounded-full p-2"
@@ -93,6 +79,82 @@ const Hero = () => {
               <p className="text-primaryRed text-lg">100+</p>
               <p className="">Colleges</p>
             </div>
+          </div>
+        </div> */}
+
+        {/* <div className="flex space-x-1 ">
+          <div className=" flex justify-center">
+            <div className="h-11 w-11 rounded-full ">
+              <img
+                className="max-h-full w-full object-contain rounded-full p-0.5 border-2"
+                src={profile1}
+                alt=""
+              />
+            </div>
+          </div>
+          <div className=" flex justify-center">
+            <div className="h-11 w-11 rounded-full ">
+              <img
+                className="max-h-full w-full object-contain rounded-full p-0.5 border-2"
+                src={profile1}
+                alt=""
+              />
+            </div>
+          </div>{" "}
+          <div className=" flex justify-center">
+            <div className="h-11 w-11 rounded-full ">
+              <img
+                className="max-h-full w-full object-contain rounded-full p-0.5 border-2"
+                src={profile1}
+                alt=""
+              />
+            </div>
+          </div>{" "}
+          <div className=" flex justify-center">
+            <div className="h-11 w-11 rounded-full ">
+              <img
+                className="max-h-full w-full object-contain rounded-full p-0.5 border-2"
+                src={profile1}
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="text-white font-bold">
+            <p>10K+ students</p>
+            <p>learn from us.</p>
+          </div>
+        </div> */}
+        <div className="flex space-x-2 items-center">
+          <div className="avatar-group -space-x-6 rtl:space-x-reverse">
+            <div className="avatar">
+              <div className="w-12">
+                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <div className="avatar">
+              <div className="w-12">
+                <img src={profile1} />
+              </div>
+            </div>
+            <div className="avatar">
+              <div className="w-12">
+                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <div className="avatar">
+              <div className="w-12">
+                <img src={profile1} />
+              </div>
+            </div>
+            <div className="avatar">
+              <div className="w-12">
+                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+          </div>
+          <div className="text-white font-bold">
+            <p>10K+ students</p>
+            <p>learn from us.</p>
           </div>
         </div>
       </div>
