@@ -8,7 +8,7 @@ const MoreAbout = () => {
   return (
     <>
       <div
-        className="bg-primaryBlue text-white h-[350px] bg-no-repeat bg-cover bg-center bg-blend-multiply"
+        className="bg-secondaryBlue text-white h-[350px] bg-no-repeat bg-cover bg-center bg-blend-multiply"
         style={{
           backgroundImage: `url(${about_hero})`,
         }}
@@ -105,7 +105,7 @@ const MoreAbout = () => {
             </p>
           </div>
         </div>
-        <div className="bg-primaryBlue  py-12 md:pl-6 ">
+        <div className="bg-secondaryBlue  py-12 md:pl-6 ">
           <div className="w-mobile md:w-containerWidth mx-auto flex flex-col items-center">
             <img className="h-12 w-12" src={mission} alt="" />
             <h2 className="py-2">MISSION</h2>
@@ -117,7 +117,7 @@ const MoreAbout = () => {
           </div>
         </div>
       </div>
-      <div className="bg-primaryBlue">
+      <div className="bg-secondaryBlue">
         <Footer />
       </div>
     </>

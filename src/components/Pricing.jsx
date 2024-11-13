@@ -98,7 +98,7 @@ const plans = [
   {
     id: 2,
     name: "Standard",
-    color: "#00236a",
+    color: "#0237ce",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus ullam",
     price: {

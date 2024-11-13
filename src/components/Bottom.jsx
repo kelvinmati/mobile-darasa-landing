@@ -9,7 +9,7 @@ const Bottom = () => {
   return (
     <div
       //   className=" h-full bg-gradient-to-b from-primaryBlue   via-secondaryBlue  to-blue-700 py-5 px-0.5 "
-      className="h-full bg-primaryBlue bg-blend-multiply bg-cover py-5 px-0.5 "
+      className="h-full bg-secondaryBlue bg-blend-multiply bg-cover py-5 px-0.5 "
       style={{
         backgroundImage: `url(${footer_img})`,
       }}

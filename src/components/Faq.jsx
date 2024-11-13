@@ -37,7 +37,7 @@ const Faq = () => {
           );
         })}
       </div>
-      <div className="bg-primaryBlue">
+      <div className="bg-secondaryBlue">
         <Footer />
       </div>
     </div>
