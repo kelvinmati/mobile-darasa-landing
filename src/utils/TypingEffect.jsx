@@ -43,7 +43,7 @@ const TypingEffect = (props) => {
   return (
     <span className="text-primaryRed">
       {currentText}
-      <span className="animate-pulse text-white">|</span>
+      <span className="animate-pulse text-primaryRed">|</span>
     </span>
   );
 };

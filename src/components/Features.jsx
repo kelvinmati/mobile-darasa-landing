@@ -4,17 +4,17 @@ import featuresImg from "../assets/images/grey-lady.png";
 const Features = () => {
   return (
     <div id="features" className=" bg-primaryRed">
-      <div className=" w-mobile md:w-containerWidth mx-auto grid grid-cols-2 ">
+      <div className=" w-mobile md:w-containerWidth mx-auto grid md:grid-cols-2 ">
         <div>
           <img className="max-h-full" src={featuresImg} alt="" />
         </div>
         <div className="text-white py-4 space-y-5">
-          <div className="flex space-x-5 ">
-            <h2 className="text-3xl font-bold">
+          <div className="flex md:space-x-5 ">
+            <h2 className=" md:text-3xl text-2xl font-bold">
               Discover The Distinct advantage of our platform
             </h2>
             <div>
-              <button className=" rounded text-white px-6 py-2 border hover:bg-white hover:text-black transition-all  ">
+              <button className=" rounded text-white px-6 py-2 border hover:bg-white hover:text-black transition-all md:block hidden  ">
                 More
               </button>
             </div>

@@ -43,7 +43,7 @@ const Challenges = () => {
               </p>
             </div>
 
-            <p className="text-primaryRed">More challenges are listed below;</p>
+            <p className="text-primaryRed">More challenges are listed below.</p>
           </div>
           <div>
             <img src={challenges} alt="" />

@@ -7,7 +7,7 @@ const Footer = () => {
       id="footer"
       className="w-mobile md:w-containerWidth mx-auto py-16 text-white relative"
     >
-      <div className="grid grid-cols-3 gap-10 pb-10">
+      <div className="grid md:grid-cols-3 gap-10 pb-10">
         <div className="space-y-2">
           <img className="h-20" src={logoWhite} alt="" />
           <p>
@@ -75,10 +75,10 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Mobile Darasa. All rights reserved.
       </p>
 
-      <div className=" absolute right-0 top-1/2 ">
+      <div className=" absolute right-0 md:top-1/2 bottom-36 ">
         <Link
           activeClass="active"
-          to="home"
+          to="hero"
           spy={true}
           smooth={true}
           offset={-80}

@@ -57,9 +57,9 @@ const Bottom = () => {
         </div>
       </div>
       {/* newsletter */}
-      <div className="bg-white  rounded-tl-[80px] rounded-br-[80px] mt-20 p-20">
+      <div className="md:bg-white  rounded-tl-[80px] rounded-br-[80px] md:mt-20 mt-10 md:p-16 p-2">
         <div
-          className="w-1/2  mx-auto  h-full bg-secondaryRed rounded-lg p-10  flex flex-col  items-center  justify-center bg-blend-multiply"
+          className="md:w-1/2  w-full mx-auto  h-full bg-secondaryRed rounded-lg p-10  flex flex-col  items-center  justify-center bg-blend-multiply"
           style={{
             backgroundImage: `url(${newsletter_img})`,
           }}
