@@ -69,6 +69,10 @@ const Pricing = () => {
         : [...prev, planId]
     );
   };
+  // visit register
+  const handleSignup = () => {
+    window.location.href = "https://staging.mdarasa.com/users/register-tenancy";
+  };
 
   return (
     <div id="pricing" className="py-16">
@@ -82,7 +86,7 @@ const Pricing = () => {
           <input type="checkbox" className="toggle" defaultChecked />
           <p>Yearly</p>
         </div>
-        <div className="grid md:grid-cols-4  gap-5 pt-16">
+        <div className="grid md:grid-cols-4  gap-5 pt-14">
           {plans.map((plan) => {
             const { id, name, price, description, features, color } = plan;
             const isExpanded = expandedPlanIds.includes(id);
@@ -93,39 +97,41 @@ const Pricing = () => {
             return (
               <div
                 key={id}
-                className={`bg-gray-50 p-3 shadow-lg rounded-lg space-y-3 border border-t-8`}
-                style={{ borderTopColor: color }}
+                className={`bg-gray-50 p-3 shadow-md rounded-lg space-y-3 `}
               >
-                <p className="font-bold">{name}</p>
+                <p className="" style={{ color: color }}>
+                  {name}
+                </p>
                 <p>
                   <span className="text-2xl">{price.monthly}</span>/month
                 </p>
-                <p>{description}</p>
+                <p className="text-xs">{description}</p>
                 <button
                   className="px-5 py-2 w-full rounded-lg text-white"
                   style={{ backgroundColor: color }}
+                  onClick={handleSignup}
                 >
                   Sign up
                 </button>
                 <div className="divider py-4">FEATURES.</div>
-
                 {displayedFeatures.map((feature) => (
                   <div
                     key={feature.name}
-                    className="flex items-center space-x-2"
+                    className="flex items-center space-x-2  "
                   >
                     <ion-icon
                       size="medium"
                       name="checkmark-circle-outline"
                     ></ion-icon>
-                    <span>{feature.name}</span>
+                    <span className={!isExpanded && "truncate"}>
+                      {feature.name}
+                    </span>
                   </div>
                 ))}
-
                 {features.length > 2 && (
                   <button
                     onClick={() => toggleFeatures(id)}
-                    className="text-blue-500 hover:underline mt-2 "
+                    className="text-secondaryBlue underline mt-2 "
                   >
                     {isExpanded ? "See Less" : "See More"}
                   </button>
@@ -147,7 +153,7 @@ const plans = [
     name: "Basic",
     color: "black",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus ullam",
+      "Get started with essential tools for simple course creation and management.",
     price: {
       monthly: "25,000",
       yearly: "240,000",
@@ -184,7 +190,7 @@ const plans = [
     name: "Standard",
     color: "#0237ce",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus ullam",
+      "Enhance your experience with additional features for better course delivery.",
     price: {
       monthly: "40,000",
       yearly: "400,000",
@@ -221,7 +227,7 @@ const plans = [
     name: "Premium",
     color: "#F59E0B",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus ullam",
+      "Unlock advanced tools for seamless course management and learner engagement.",
     price: {
       monthly: "65,000",
       yearly: "650,000",
@@ -266,7 +272,7 @@ const plans = [
     name: "Enterprise",
     color: "#c30800",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus ullam",
+      "Comprehensive solutions tailored for large-scale institutions and organizations.",
     price: {
       monthly: "custom pricing",
       yearly: "custom pricing",
