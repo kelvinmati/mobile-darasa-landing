@@ -193,7 +193,13 @@ const Navbar = () => {
           </li>
           <li className="cursor-pointer hover:text-primaryRed text-textColor">
             {location.pathname === "/" ? (
-              <Link to="pricing" smooth={true} duration={1500} offset={-80}>
+              <Link
+                onClick={() => setIsSideBarOpen(false)}
+                to="pricing"
+                smooth={true}
+                duration={1500}
+                offset={-80}
+              >
                 Pricing
               </Link>
             ) : (
@@ -210,7 +216,13 @@ const Navbar = () => {
 
           <li className="cursor-pointer hover:text-primaryRed text-textColor">
             {location.pathname === "/" ? (
-              <Link to="contact" smooth={true} duration={1500} offset={-80}>
+              <Link
+                onClick={() => setIsSideBarOpen(false)}
+                to="contact"
+                smooth={true}
+                duration={1500}
+                offset={-80}
+              >
                 Contact
               </Link>
             ) : (
