@@ -12,12 +12,12 @@ body {
   color: yellow;
 }
 
-.active {
+/* .active {
   color: #ff0007;
 }
 .inactive {
   color: #39575c;
-}
+} */
 
 .swiper-pagination-bullet {
   background-color: gray !important; /* inactive dot color */

@@ -3,6 +3,7 @@ import about_hero from "../assets/images/about-hero.jpg";
 import vision from "../assets/icons/vision.png";
 import mission from "../assets/icons/mission.png";
 import Footer from "./Footer";
+import Team from "./Team";
 
 const MoreAbout = () => {
   return (
@@ -93,7 +94,7 @@ const MoreAbout = () => {
 
       {/* mission and vison */}
 
-      <div className="grid md:grid-cols-2 text-white pt-10 pb-20 ">
+      <div className="grid md:grid-cols-2 text-white p-10 ">
         <div className="bg-secondaryRed  py-12 md:pl-6 ">
           <div className="w-mobile md:w-containerWidth mx-auto flex flex-col items-center">
             <img className="h-12 w-12" src={vision} alt="" />
@@ -117,6 +118,7 @@ const MoreAbout = () => {
           </div>
         </div>
       </div>
+      <Team />
       <div className="bg-secondaryBlue">
         <Footer />
       </div>

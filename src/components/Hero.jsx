@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="w-mobile md:w-containerWidth mx-auto bg-blend-multiply bg-cover rounded-3xl md:px-8 md:py-0 pt-7 px-4 gap-5 grid md:grid-cols-2 items-center md:h-[550px]"
+      className="w-mobile md:w-containerWidth mx-auto bg-blend-multiply bg-cover rounded-3xl md:px-8 md:py-0 pt-7 px-4 gap-5 grid md:grid-cols-2 items-center "
       style={{
         backgroundImage: `url(${hero_bg})`,
       }}
@@ -58,8 +58,8 @@ const Hero = () => {
               alt=""
             />
             <div>
-              <p className="text-primaryRed md:text-lg text-md">200+</p>
-              <p className="text-xs">Universities</p>
+              <p className="text-primaryRed md:text-lg text-sm">200+</p>
+              <p className="md:text-sm text-xs">Universities</p>
             </div>
           </div>
           <div className="flex items-center md:space-x-4 space-x-2 border-r-2">
@@ -69,8 +69,8 @@ const Hero = () => {
               alt=""
             />
             <div>
-              <p className="text-primaryRed md:text-lg text-md">1000+</p>
-              <p className="text-xs">Students</p>
+              <p className="text-primaryRed md:text-lg text-sm">1000+</p>
+              <p className="md:text-sm text-xs">Students</p>
             </div>
           </div>{" "}
           <div className="flex items-center md:space-x-4 space-x-2 ">
@@ -80,8 +80,8 @@ const Hero = () => {
               alt=""
             />
             <div>
-              <p className="text-primaryRed md:text-lg text-md">100+</p>
-              <p className="text-xs">Colleges</p>
+              <p className="text-primaryRed md:text-lg text-sm">100+</p>
+              <p className="md:text-sm text-xs">Colleges</p>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ const Hero = () => {
         <Carousel />
       </div> */}
 
-      <div>
+      <div className="">
         <img src={hero_img} alt="" />
       </div>
     </div>

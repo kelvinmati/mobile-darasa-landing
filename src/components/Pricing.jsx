@@ -74,6 +74,12 @@ const Pricing = () => {
     window.location.href = "https://staging.mdarasa.com/users/register-tenancy";
   };
 
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
+
   return (
     <div id="pricing" className="py-16">
       <div className="w-mobile md:w-containerWidth mx-auto">
@@ -83,9 +89,15 @@ const Pricing = () => {
 
         <div className="flex justify-center items-center space-x-5">
           <p>Monthly</p>
-          <input type="checkbox" className="toggle" defaultChecked />
+          <input
+            type="checkbox"
+            className="toggle bg-secondaryBlue hover:bg-primaryBlue"
+            // checked={isChecked}
+            onChange={handleChange}
+          />
           <p>Yearly</p>
         </div>
+        {/* <p>The checkbox is {isChecked ? "checked" : "unchecked"}.</p> */}
         <div className="grid md:grid-cols-4  gap-5 pt-14">
           {plans.map((plan) => {
             const { id, name, price, description, features, color } = plan;
@@ -103,9 +115,13 @@ const Pricing = () => {
                   {name}
                 </p>
                 <p>
-                  <span className="text-2xl">{price.monthly}</span>/month
+                  <span className="text-2xl">
+                    Ksh {isChecked ? price.yearly : price.monthly}
+                  </span>
+                  /{isChecked ? "yearly" : "monthly"}
                 </p>
-                <p className="text-xs">{description}</p>
+
+                <p className="text-sm">{description}</p>
                 <button
                   className="px-5 py-2 w-full rounded-lg text-white"
                   style={{ backgroundColor: color }}
@@ -226,8 +242,7 @@ const plans = [
     id: 3,
     name: "Premium",
     color: "#F59E0B",
-    description:
-      "Unlock advanced tools for seamless course management and learner engagement.",
+    description: "Unlock advanced tools for seamless course management.",
     price: {
       monthly: "65,000",
       yearly: "650,000",

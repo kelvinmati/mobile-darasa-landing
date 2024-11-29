@@ -9,7 +9,7 @@ import grading from "../assets/images/grading.png";
 import support from "../assets/icons/support.png";
 import roleBased from "../assets/icons/role-based.png";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -25,10 +25,27 @@ const Navbar = () => {
   }, []);
   // toggle side bar
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-  console.log("isSideBarOpen", isSideBarOpen);
-  // console.log("isNavbarScrolled", isNavbarScrolled);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleScroll = (section) => {
+    setIsSideBarOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/"); // Navigate to the root route
+      setTimeout(() => {
+        // Delay scrolling to ensure the page is loaded
+        document
+          .getElementById(section)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100); // Adjust delay as necessary
+    } else {
+      // Direct scroll if already on the root route
+      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    // <div id="home" className="py-3 h-[90px] bg-black">
     <div
       id="home"
       className={`py-3 h-[90px]${
@@ -41,53 +58,45 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="md:flex hidden  space-x-3">
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? "active" : "inactive")}
-            >
-              Home
-            </NavLink>
-            {/* <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? "active" : "inactive")}
-            >
-              About
-            </NavLink> */}
-
             <li className="cursor-pointer hover:text-primaryRed text-textColor">
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={1500}
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="cursor-pointer hover:text-primaryRed text-textColor">
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
               >
                 About
-              </Link>
+              </NavLink>
             </li>
+
             <li className="cursor-pointer hover:text-primaryRed text-textColor">
-              <Link
-                to="features"
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={1500}
-              >
-                Features
-              </Link>
+              {location.pathname === "/" ? (
+                <Link to="features" smooth={true} duration={1500} offset={-80}>
+                  Features
+                </Link>
+              ) : (
+                <button onClick={() => handleScroll("features")}>
+                  Features
+                </button>
+              )}
             </li>
+
             <li className="cursor-pointer hover:text-primaryRed text-textColor">
-              <Link
-                activeClass="active"
-                to="pricing"
-                // spy={true}
-                smooth={true}
-                offset={-80}
-                duration={1500}
-              >
-                Pricing
-              </Link>
+              {location.pathname === "/" ? (
+                <Link to="pricing" smooth={true} duration={1500} offset={-80}>
+                  Pricing
+                </Link>
+              ) : (
+                <button onClick={() => handleScroll("pricing")}>Pricing</button>
+              )}
             </li>
+
             <NavLink to="/faq">
               <li className="cursor-pointer hover:text-primaryRed text-textColor">
                 FAQs
@@ -95,15 +104,13 @@ const Navbar = () => {
             </NavLink>
 
             <li className="cursor-pointer hover:text-primaryRed text-textColor">
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={1500}
-              >
-                Contact
-              </Link>
+              {location.pathname === "/" ? (
+                <Link to="contact" smooth={true} duration={1500} offset={-80}>
+                  Contact
+                </Link>
+              ) : (
+                <button onClick={() => handleScroll("contact")}>Contact</button>
+              )}
             </li>
           </ul>
         </div>
@@ -147,69 +154,68 @@ const Navbar = () => {
         }`}
       >
         <ul className="space-y-2 flex flex-col items-center">
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "inactive")}
+          <li
+            onClick={() => setIsSideBarOpen(false)}
+            className="cursor-pointer hover:text-primaryRed text-textColor"
           >
-            Home
-          </NavLink>
-          {/* <NavLink
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li
+            onClick={() => setIsSideBarOpen(false)}
+            className="cursor-pointer hover:text-primaryRed text-textColor"
+          >
+            <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? "active" : "inactive")}
             >
               About
-            </NavLink> */}
+            </NavLink>
+          </li>
+          <li className="cursor-pointer hover:text-primaryRed text-textColor">
+            {location.pathname === "/" ? (
+              <Link
+                onClick={() => setIsSideBarOpen(false)}
+                to="features"
+                smooth={true}
+                duration={1500}
+                offset={-80}
+              >
+                Features
+              </Link>
+            ) : (
+              <button onClick={() => handleScroll("features")}>Features</button>
+            )}
+          </li>
+          <li className="cursor-pointer hover:text-primaryRed text-textColor">
+            {location.pathname === "/" ? (
+              <Link to="pricing" smooth={true} duration={1500} offset={-80}>
+                Pricing
+              </Link>
+            ) : (
+              <button onClick={() => handleScroll("pricing")}>Pricing</button>
+            )}
+          </li>
+          <li onClick={() => setIsSideBarOpen(false)}>
+            <NavLink to="/faq">
+              <li className="cursor-pointer hover:text-primaryRed text-textColor">
+                FAQs
+              </li>
+            </NavLink>
+          </li>
 
           <li className="cursor-pointer hover:text-primaryRed text-textColor">
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={1500}
-            >
-              About
-            </Link>
-          </li>
-          <li className="cursor-pointer hover:text-primaryRed text-textColor">
-            <Link
-              to="features"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={1500}
-            >
-              Features
-            </Link>
-          </li>
-          <li className="cursor-pointer hover:text-primaryRed text-textColor">
-            <Link
-              activeClass="active"
-              to="pricing"
-              // spy={true}
-              smooth={true}
-              offset={-80}
-              duration={1500}
-            >
-              Pricing
-            </Link>
-          </li>
-          <NavLink to="/faq">
-            <li className="cursor-pointer hover:text-primaryRed text-textColor">
-              FAQs
-            </li>
-          </NavLink>
-
-          <li className="cursor-pointer hover:text-primaryRed text-textColor">
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={1500}
-            >
-              Contact
-            </Link>
+            {location.pathname === "/" ? (
+              <Link to="contact" smooth={true} duration={1500} offset={-80}>
+                Contact
+              </Link>
+            ) : (
+              <button onClick={() => handleScroll("contact")}>Contact</button>
+            )}
           </li>
           <a href="https://staging.mdarasa.com/users/register-tenancy">
             <button className="px-6 py-2 bg-primaryRed text-white rounded-full hover:bg-secondaryRed">
