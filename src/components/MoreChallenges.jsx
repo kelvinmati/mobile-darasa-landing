@@ -43,18 +43,30 @@ const MoreChallenges = () => {
         }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        className="py-14"
         // effect={"cube"}
       >
         {challenges.map((challenge) => (
-          <SwiperSlide key={challenge.id} className="py-10 ">
-            <div className=" bg-white text-black p-5 rounded-xl h-full overflow-y-auto max-h-[300px] md:max-h-[400px]">
-              <p className="text-xl py-5">{challenge.title}</p>
-              <div className="space-y-2">
+          <SwiperSlide key={challenge.id} className="   ">
+            {/* <div className=" bg-white text-black p-5 rounded-xl h-full overflow-y-auto max-h-[300px] md:max-h-[500px]"> */}
+            {/* <div className=" bg-white text-black p-5 rounded-xl max-h-[300px] md:h-[600px]"> */}
+            <div
+              className="bg-white text-black p-5 rounded-xl h-[400px] flex flex-col justify-between overflow-hidden"
+              style={{
+                height: "400px", // Fixed height
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <p className="text-lg py-2 font-bold">{challenge.title}</p>
+              <div className="flex-grow space-y-2 overflow-y-auto ">
                 <p className="text-textColor">
-                  <span>Challenge:</span> {challenge.challenge}
+                  <span className="font-semibold">Challenge:</span>{" "}
+                  {challenge.challenge}
                 </p>
                 <p className="text-textColor">
-                  <span>Solution:</span> {challenge.solution}
+                  <span className="font-semibold">Solution:</span>{" "}
+                  {challenge.solution}
                 </p>
               </div>
             </div>
