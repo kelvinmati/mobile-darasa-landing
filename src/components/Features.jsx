@@ -1,12 +1,20 @@
 import React from "react";
 import content_lib from "../assets/images/content-lib.png";
-import featuresImg from "../assets/images/grey-lady.png";
+import lady from "../assets/images/greylady.png";
+import features_bg from "../assets/images/features.png";
+
 const Features = () => {
   return (
-    <div id="features" className=" bg-primaryRed">
-      <div className=" w-mobile md:w-containerWidth mx-auto grid md:grid-cols-2 ">
+    <div
+      id="features"
+      className=" bg-cover"
+      style={{
+        backgroundImage: `url(${features_bg})`,
+      }}
+    >
+      <div className=" w-mobile md:w-containerWidth mx-auto grid md:grid-cols-2 items-center ">
         <div>
-          <img className="max-h-full" src={featuresImg} alt="" />
+          <img className="h-[550px]" src={lady} alt="" />
         </div>
         <div className="text-white py-4 space-y-5">
           <div className="flex md:space-x-5 ">

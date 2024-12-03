@@ -48,12 +48,12 @@ const Navbar = () => {
   return (
     <div
       id="home"
-      className={`py-3 h-[90px]${
+      className={`py-3 md:h-[90px] ${
         isNavbarScrolled && " bg-white fixed w-full z-50"
       } `}
     >
       <div className="w-mobile md:w-containerWidth mx-auto h-full flex items-center justify-between  ">
-        <div className="h-[80px] cursor-pointer">
+        <div className="md:h-[80px]  h-[70px] w-[150px] cursor-pointer">
           <img className="w-full h-full" src={logoBlue} alt="" />
         </div>
         <div>

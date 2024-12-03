@@ -75,7 +75,7 @@ const MoreChallenges = () => {
 
         <button
           ref={navigationPrevRef}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-secondaryBlue hover:bg-primaryBlue p-2 rounded-full shadow-lg transition-all duration-200"
+          className="absolute  left-4 top-1/2 -translate-y-1/2 z-10 bg-secondaryBlue hover:bg-primaryBlue p-2 rounded-full shadow-lg transition-all duration-200 md:block hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const MoreChallenges = () => {
 
         <button
           ref={navigationNextRef}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-secondaryBlue hover:bg-primaryBlue p-2 rounded-full shadow-lg transition-all duration-200"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-secondaryBlue hover:bg-primaryBlue p-2 rounded-full shadow-lg transition-all duration-200 md:block hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
