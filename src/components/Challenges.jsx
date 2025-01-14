@@ -6,13 +6,13 @@ const Challenges = () => {
     <div className="py-10">
       <div className=" w-mobile md:w-containerWidth mx-auto ">
         <h1 className="text-center text-lg pb-5 uppercase">
-          Explore Challenges That Mobile Darasa Addresses
+          Explore Challenges That iShule Addresses
         </h1>
         <div className="grid md:grid-cols-2 text-white ">
           <div className="p-10 bg-secondaryBlue rounded-3xl space-y-5 flex flex-col  justify-center">
             <h2 className="text-2xl font-bold">
               These challenges highlight the significant barriers to education
-              that Mobile Darasa
+              that iShule
             </h2>
             <div>
               <p>Access to Quality Education.</p>
@@ -22,10 +22,9 @@ const Challenges = () => {
                 and experienced educators.
               </p>
               <p className="text-gray-300 pt-3">
-                <span>Solution:</span> Mobile Darasa provides a digital platform
-                that enables institutions to reach students regardless of
-                location, offering quality courses and learning materials
-                online.
+                <span>Solution:</span> iShule provides a digital platform that
+                enables institutions to reach students regardless of location,
+                offering quality courses and learning materials online.
               </p>
             </div>
             <div>
@@ -37,9 +36,9 @@ const Challenges = () => {
               </p>
               <p className="text-gray-300 pt-3">
                 <span>Solution:</span> By offering a ready-to-use, customizable
-                platform, Mobile Darasa eliminates the need for expensive
-                development, allowing institutions to focus their budgets on
-                enhancing learning experiences.
+                platform, iShule eliminates the need for expensive development,
+                allowing institutions to focus their budgets on enhancing
+                learning experiences.
               </p>
             </div>
 

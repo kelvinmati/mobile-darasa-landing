@@ -33,25 +33,25 @@ const About = () => {
           </div>
         </div>
         <div className="text-textColor space-y-3">
-          <h2 className="text-xl text-black">ABOUT MOBILE DARASA</h2>
+          <h2 className="text-xl text-black">ABOUT iShule</h2>
           <p>
-            Mobile Darasa is an innovative e-learning platform designed to
-            empower educational institutions across Africa by providing
-            customizable and accessible digital learning solutions. Our mission
-            is to enhance the quality and reach of education by transforming
-            traditional learning environments into dynamic online spaces that
-            cater to a diverse range of learners.
+            iShule is an innovative e-learning platform designed to empower
+            educational institutions across Africa by providing customizable and
+            accessible digital learning solutions. Our mission is to enhance the
+            quality and reach of education by transforming traditional learning
+            environments into dynamic online spaces that cater to a diverse
+            range of learners.
           </p>
           <p>
-            Mobile Darasa aims to address the unique challenges faced by African
+            iShule aims to address the unique challenges faced by African
             educational institutions, such as limited access to quality
             resources, high development costs, and inadequate infrastructure. By
             offering a ready-to-use, branded digital learning environment,
-            Mobile Darasa enables institutions to focus on delivering quality
-            education without the burden of technical complexities.
+            iShule enables institutions to focus on delivering quality education
+            without the burden of technical complexities.
           </p>
           <p className="text-black">
-            Mobile Darasa targets learning institutions in Kenya, including:
+            iShule targets learning institutions in Kenya, including:
           </p>
           <div className="grid grid-cols-2 gap-5">
             <div className="space-y-3">

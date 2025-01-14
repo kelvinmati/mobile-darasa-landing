@@ -39,11 +39,11 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-2">
               <ion-icon name="mail-outline"></ion-icon>
-              <p>support@mobiledarasa.com</p>
+              <p>support@ishule.com</p>
             </div>
             <div className="flex items-center space-x-2">
               <ion-icon name="globe-outline"></ion-icon>
-              <p>www.mobiledarasa.com</p>
+              <p>www.ishule.com</p>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Footer = () => {
       <hr />
       <p className="text-center pt-2">
         {" "}
-        &copy; {new Date().getFullYear()} Mobile Darasa. All rights reserved.
+        &copy; {new Date().getFullYear()} iShule. All rights reserved.
       </p>
 
       <div className=" absolute right-0 md:top-1/2 bottom-36 ">

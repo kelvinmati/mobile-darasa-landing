@@ -13,7 +13,7 @@ const Offers = () => {
   return (
     <div className="pt-20 pb-10">
       <div className="text-center">
-        <h2 className="text-lg">WHAT MOBILE DARASA OFFERS.</h2>
+        <h2 className="text-lg">WHAT ISHULE OFFERS.</h2>
         <p className="text-primaryRed">
           Comprehensive learning solutions that transform talent into your
           competitive advantage.
@@ -27,9 +27,9 @@ const Offers = () => {
           <div className="space-y-3 p-5">
             <p className="text-lg">Customizable Learning Environment.</p>
             <p className="text-textColor">
-              Each institution can personalize its Mobile Darasa platform with
-              its branding, including logos and color schemes, ensuring a
-              cohesive identity for students and faculty.
+              Each institution can personalize its iShule platform with its
+              branding, including logos and color schemes, ensuring a cohesive
+              identity for students and faculty.
             </p>
             <button className=" px-6 py-2 bg-secondaryBlue text-white rounded-full hover:bg-primaryBlue ">
               <span>Learn more</span>{" "}
@@ -59,9 +59,9 @@ const Offers = () => {
           <div className="space-y-3 p-5">
             <p className="text-lg">Accessibility and Inclusivity.</p>
             <p className="text-textColor">
-              Mobile Darasa is designed to be accessible on various devices,
-              including smartphones and tablets, catering to the needs of all
-              learners, including those in remote areas with limited internet
+              iShule is designed to be accessible on various devices, including
+              smartphones and tablets, catering to the needs of all learners,
+              including those in remote areas with limited internet
               connectivity.
             </p>
             <button className=" px-6 py-2 bg-secondaryBlue text-white rounded-full hover:bg-primaryBlue ">

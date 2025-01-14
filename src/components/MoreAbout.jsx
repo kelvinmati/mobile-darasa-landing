@@ -21,7 +21,7 @@ const MoreAbout = () => {
               <li>About us</li>
             </ul>
           </div>
-          <p className="text-primaryRed"> Know more about mobile darasa. </p>
+          <p className="text-primaryRed"> Know more about iShule. </p>
         </div>
       </div>
       <div className="w-mobile md:w-containerWidth mx-auto py-10">
@@ -31,29 +31,28 @@ const MoreAbout = () => {
           </div>
           <div className="space-y-4">
             <p>
-              Mobile Darasa operates as a white-label digital learning platform
+              iShule operates as a white-label digital learning platform
               designed to support institutions in delivering online education
               efficiently and at scale.
             </p>
             <p>
-              Mobile Darasa is an innovative e-learning platform dedicated to
+              iShule is an innovative e-learning platform dedicated to
               transforming education across Africa. By providing customizable
-              and accessible digital learning solutions, Mobile Darasa empowers
+              and accessible digital learning solutions, iShule empowers
               educational institutions to enhance their course offerings and
               reach a diverse range of learners.
             </p>
             <p>
               With a focus on user-friendly design, comprehensive support, and a
-              commitment to inclusivity, Mobile Darasa enables institutions to
-              overcome traditional barriers to education, such as high
-              development costs and limited access to quality resources. Our
-              mission is to foster academic excellence and engagement, creating
-              opportunities for students and institutions alike in the digital
-              age.
+              commitment to inclusivity, iShule enables institutions to overcome
+              traditional barriers to education, such as high development costs
+              and limited access to quality resources. Our mission is to foster
+              academic excellence and engagement, creating opportunities for
+              students and institutions alike in the digital age.
             </p>
             <p>
-              Mobile Darasa not only streamlines course creation and management
-              but also incorporates analytics and reporting features that enable
+              iShule not only streamlines course creation and management but
+              also incorporates analytics and reporting features that enable
               institutions to track student progress, engagement, and outcomes
               effectively.
             </p>
@@ -62,8 +61,8 @@ const MoreAbout = () => {
         <div>
           <h2 className="text-xl pt-2">IMPACT</h2>
           <p className="text-primaryRed py-1">
-            Mobile Darasa is committed to transforming the educational landscape
-            in Africa by:
+            iShule is committed to transforming the educational landscape in
+            Africa by:
           </p>
           <div className="space-y-2">
             <div className="flex items-center space-x-2 ">

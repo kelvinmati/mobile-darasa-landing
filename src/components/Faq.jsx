@@ -48,9 +48,9 @@ export default Faq;
 
 const faqs = [
   {
-    quiz: "Can Mobile Darasa be completely branded to our institution without any visible mention of your company?",
+    quiz: "Can iShule be completely branded to our institution without any visible mention of your company?",
     answer:
-      "Yes. Mobile Darasa will fully customize the platform to reflect your institution’s identity, from logos to theme colors, ensuring a seamless experience where our brand is not visible to end-users.",
+      "Yes. iShule will fully customize the platform to reflect your institution’s identity, from logos to theme colors, ensuring a seamless experience where our brand is not visible to end-users.",
   },
   {
     quiz: "What if our institution does not have a website?",
@@ -60,7 +60,7 @@ const faqs = [
   {
     quiz: "How is data privacy and security handled?",
     answer:
-      "Mobile Darasa adheres to strict data security protocols to protect student and institutional information. Our platform complies with data protection regulations to ensure privacy and security for all users.",
+      "iShule adheres to strict data security protocols to protect student and institutional information. Our platform complies with data protection regulations to ensure privacy and security for all users.",
   },
   {
     quiz: "What types of content can we upload?",
@@ -73,13 +73,13 @@ const faqs = [
       "Typically, the onboarding and setup process takes between 2-4 weeks, depending on customization needs and content volume. This timeline ensures adequate time for customization, testing, and training.",
   },
   {
-    quiz: "Can we integrate Mobile Darasa with existing tools or systems?",
+    quiz: "Can we integrate iShule with existing tools or systems?",
     answer:
       "We support integrations with popular educational and administrative tools. During onboarding, we can discuss specific integration needs to optimize your platform experience.",
   },
   {
     quiz: "Is there a limit on the number of students or courses?",
     answer:
-      "No, Mobile Darasa is designed to scale with your institution’s growth. You can add courses and increase enrollment without any limitations.",
+      "No, iShule is designed to scale with your institution’s growth. You can add courses and increase enrollment without any limitations.",
   },
 ];

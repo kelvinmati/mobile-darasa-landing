@@ -126,7 +126,7 @@ const challenges = [
     challenge:
       "Many students, particularly in rural or underserved areas, lack access to quality educational resources and experienced educators.",
     solution:
-      "Mobile Darasa provides a digital platform that enables institutions to reach students regardless of location, offering quality courses and learning materials online.",
+      "iShule provides a digital platform that enables institutions to reach students regardless of location, offering quality courses and learning materials online.",
   },
   {
     id: 2,
@@ -134,7 +134,7 @@ const challenges = [
     challenge:
       "Developing custom e-learning software can be prohibitively expensive for institutions, diverting funds from other critical educational needs.",
     solution:
-      "By offering a ready-to-use, customizable platform, Mobile Darasa eliminates the need for expensive development, allowing institutions to focus their budgets on enhancing learning experiences.",
+      "By offering a ready-to-use, customizable platform, iShule eliminates the need for expensive development, allowing institutions to focus their budgets on enhancing learning experiences.",
   },
   {
     id: 3,
@@ -142,7 +142,7 @@ const challenges = [
     challenge:
       "Many educational institutions in Africa struggle with limited infrastructure, including unreliable internet access and outdated technology.",
     solution:
-      "Mobile Darasa is designed to work effectively even in low-bandwidth environments, ensuring that institutions can provide online learning without requiring extensive technological upgrades.",
+      "iShule is designed to work effectively even in low-bandwidth environments, ensuring that institutions can provide online learning without requiring extensive technological upgrades.",
   },
   {
     id: 4,
@@ -150,7 +150,7 @@ const challenges = [
     challenge:
       "Traditional educational methods often fail to engage students, leading to low retention rates and poor academic performance.",
     solution:
-      "Mobile Darasa incorporates interactive tools, multimedia content, and collaborative features that promote engagement and enhance the learning experience, leading to improved student retention and success.",
+      "iShule incorporates interactive tools, multimedia content, and collaborative features that promote engagement and enhance the learning experience, leading to improved student retention and success.",
   },
   {
     id: 5,
@@ -158,7 +158,7 @@ const challenges = [
     challenge:
       "There is a shortage of qualified educators in many regions, making it difficult for institutions to deliver high-quality education.",
     solution:
-      "Mobile Darasa enables institutions to leverage online courses and materials from expert educators, providing students access to quality instruction that may not be locally available.",
+      "iShule enables institutions to leverage online courses and materials from expert educators, providing students access to quality instruction that may not be locally available.",
   },
   {
     id: 6,
@@ -166,7 +166,7 @@ const challenges = [
     challenge:
       " Many institutions have a narrow range of courses due to resource constraints, limiting students’ choices and career opportunities.",
     solution:
-      "Mobile Darasa allows institutions to expand their course offerings quickly, enabling them to provide diverse educational programs tailored to the needs of their communities and the job market.",
+      "iShule allows institutions to expand their course offerings quickly, enabling them to provide diverse educational programs tailored to the needs of their communities and the job market.",
   },
   {
     id: 7,
@@ -174,7 +174,7 @@ const challenges = [
     challenge:
       "Managing student information, course materials, and assessments can be cumbersome and time-consuming for institutions.",
     solution:
-      "Mobile Darasa streamlines administrative processes through integrated management tools, allowing institutions to efficiently track student progress, manage courses, and generate reports.",
+      "iShule streamlines administrative processes through integrated management tools, allowing institutions to efficiently track student progress, manage courses, and generate reports.",
   },
   {
     id: 8,
@@ -182,7 +182,7 @@ const challenges = [
     challenge:
       "Students with disabilities or specific learning needs often face barriers in traditional educational settings.",
     solution:
-      "Mobile Darasa is designed with accessibility in mind, ensuring that all students, regardless of their individual needs, can engage with educational content effectively.",
+      "iShule is designed with accessibility in mind, ensuring that all students, regardless of their individual needs, can engage with educational content effectively.",
   },
   {
     id: 9,
@@ -190,6 +190,6 @@ const challenges = [
     challenge:
       " African institutions often lag in adopting innovative educational practices, affecting their competitiveness on a global scale.",
     solution:
-      "By providing advanced e-learning solutions, Mobile Darasa helps institutions modernize their educational offerings, making them more competitive and attractive to both local and international students.",
+      "By providing advanced e-learning solutions, iShule helps institutions modernize their educational offerings, making them more competitive and attractive to both local and international students.",
   },
 ];

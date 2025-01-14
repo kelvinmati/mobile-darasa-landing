@@ -6,7 +6,7 @@ const Contact = () => {
       <div className=" w-mobile md:w-containerWidth mx-auto grid md:grid-cols-3 md:rounded-3xl bg-white items-center">
         <div className="p-7 space-y-8 md:col-span-2">
           <p className="md:text-4xl text-xl">
-            Let’s discuss how Mobile Darasa is a valuable asset in running your
+            Let’s discuss how iShule is a valuable asset in running your
             institution.
           </p>
           <button

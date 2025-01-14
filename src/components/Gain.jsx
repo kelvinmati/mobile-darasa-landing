@@ -12,20 +12,17 @@ const Gain = () => {
           />
         </div>
         <div className="p-7 text-white">
-          <p className=" text-2xl pb-3 font-bold">
-            Benefits of using Mobile Darasa;
-          </p>
+          <p className=" text-2xl pb-3 font-bold">Benefits of using iShule;</p>
           <ul className="space-y-3">
             <li>
               <span className=" text-black"> Broad Access and Reach:</span> With
-              Mobile Darasa, institutions can easily connect with students
-              beyond geographical limits, offering flexible online learning
-              options that attract a wider audience and promote continuous
-              learning.
+              iShule, institutions can easily connect with students beyond
+              geographical limits, offering flexible online learning options
+              that attract a wider audience and promote continuous learning.
             </li>
             <li>
               <span className=" text-black"> Revenue Expansion:</span> By
-              broadening student access, Mobile Darasa unlocks new revenue
+              broadening student access, iShule unlocks new revenue
               opportunities. Institutions can capitalize on the growing demand
               for online courses, turning digital learning into a reliable
               revenue source that scales with enrollment.
@@ -42,10 +39,9 @@ const Gain = () => {
                 {" "}
                 Enhanced Institutional Image:
               </span>{" "}
-              Embracing Mobile Darasa enhances an institutions’ brand,
-              showcasing it as a forward-thinking, tech-enabled leader in
-              education that provides flexible, accessible solutions for today’s
-              learners.
+              Embracing iShule enhances an institutions’ brand, showcasing it as
+              a forward-thinking, tech-enabled leader in education that provides
+              flexible, accessible solutions for today’s learners.
             </li>
           </ul>
         </div>

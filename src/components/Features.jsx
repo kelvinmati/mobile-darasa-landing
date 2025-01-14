@@ -49,8 +49,8 @@ const Features = () => {
                 Branded & Customised Learning Environment.
               </p>
               <p className="text-textColor">
-                Each institution’s Mobile Darasa instance is tailored to reflect
-                its unique branding elements logo,
+                Each institution’s iShule instance is tailored to reflect its
+                unique branding elements logo,
               </p>
             </div>
             <div className="bg-white rounded-xl p-2">
@@ -97,7 +97,7 @@ const Features = () => {
                 Ongoing Support and Maintenance.
               </p>
               <p className="text-textColor">
-                Mobile Darasa provides continuous support, including onboarding
+                iShule provides continuous support, including onboarding
                 training, troubleshooting, and system updates
               </p>
             </div>{" "}
